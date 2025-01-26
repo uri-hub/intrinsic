@@ -1,0 +1,297 @@
+/*  * reset and global styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Dosis", serif;
+}
+
+body {
+  background-color: #f0eff4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* * header and navigation */
+
+.navBar {
+  background-color: #f0eff4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.headerLogo {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 300px;
+  width: 300px;
+}
+
+.navBarLinks {
+  background-color: #000000;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+}
+
+.navBarLinks a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 30px;
+  color: #f0eff4;
+}
+
+.navBarLinks a:hover {
+  text-decoration: underline;
+}
+
+/* * Main content layout */
+
+.mainContainer {
+  background-color: #f0eff4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.mainContainer h2 {
+  margin-top: 50px;
+  font-size: 48px;
+  padding: 10px;
+}
+
+/* * section containers */
+
+.sectionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#band .sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px; /* Ajuste este valor conforme necessário */
+}
+
+/* * Articles and Content */
+
+.articleContainer {
+  border-radius: 12px;
+  background-color: #000000;
+  max-width: 30%; /* Limita a largura do contêiner */
+  margin: 50px 20px; /* Adiciona espaço entre os contêineres de notícias */
+  padding: 30px; /* Adiciona espaço interno */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+
+.articleIMG {
+  height: auto; /* Mantém a proporção da imagem */
+  width: 100%; /* Faz a imagem preencher a largura do contêiner */
+  border-radius: 12px;
+  display: flex;
+  align-self: center;
+}
+
+/* * news section */
+
+#news .articleContainer .text {
+  color: #f0eff4;
+  font-size: 20px;
+  display: flex;
+  white-space: normal;
+  word-wrap: break-word;
+  padding: 10px 0;
+  gap: 20px;
+}
+
+.newsContainer .text .date {
+  display: flex;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+/* * band section  */
+
+#band .articleContainer {
+  border-radius: 12px;
+  background-color: #000000;
+  max-width: 100%; /* Limita a largura do contêiner */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 20px;
+  padding: 30px;
+}
+
+#band .articleContainer .text {
+  color: #f0eff4;
+  font-size: 20px;
+  display: flex;
+}
+
+/* * music section  */
+
+#music .iframe {
+  width: 100%;
+  height: 370px;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* * tour section  */
+
+#tour .sectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#tourDates {
+  background-color: #000000;
+  border-spacing: 0px 10px;
+  border-collapse: separate;
+  border-radius: 12px;
+  margin: 50px 20px;
+  padding: 30px;
+}
+
+#tourDates tr {
+  background-color: ghostwhite;
+  color: #000000;
+}
+
+#tourDates td {
+  font-size: 24px;
+  padding: 20px 80px;
+}
+
+#tourDates a {
+  border-style: ridge;
+  border-radius: 3px;
+  padding: 5px 20px;
+  font-size: 18px;
+  background-color: #f0eff4;
+  color: #000000;
+  text-decoration: none;
+}
+
+#tourDates a:hover {
+  background-color: #000000;
+  color: #f0eff4;
+}
+
+/* * Subscription form */
+
+#mailList {
+  height: 200px;
+  width: 100%;
+  background-color: #000000;
+  color: #f0eff4;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#formContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 10px;
+}
+
+.inputButtonContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+#email {
+  flex: 1;
+  width: 50%;
+  font-size: 24px;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.button {
+  width: 50%;
+  font-size: 24px;
+  border-radius: 5px;
+  white-space: nowrap;
+  padding: 3px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+/* * footer */
+
+.footer {
+  background-color: #f0eff4;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 15px;
+  padding: 30px;
+}
+
+.footer p {
+  font-weight: bolder;
+  font-size: 18px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  list-style-type: none;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  border-right: 1px solid #000000;
+  padding-right: 15px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links .last {
+  border-right: 0;
+}
+
+.footer-logo {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+}
